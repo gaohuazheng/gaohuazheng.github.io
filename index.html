@@ -192,7 +192,8 @@ var _hmt = _hmt || [];
       
         <p>数组题是比较基本的一类题,以下是我自己做的一些整理</p>
 <p>283．给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。<br>示例:<br>输入: [0,1,0,3,12]<br>输出: [1,3,12,0,0]</p>
-<p>class Solution {<br>    public void moveZeroes(int[] nums) {<br>        int index = 0;<br>        for(int i = 0;i &lt; nums.length;i++){<br>        if(nums[i]!=0){<br>                    nums[index++]=nums[i];<br>                }<br>        }<br>    for(;index &lt; nums.length;index++){<br>                nums[index]=0;<br>            }<br>        }<br>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">	public void moveZeroes(int[] nums) &#123;</span><br><span class="line">		int index &#x3D; 0;</span><br><span class="line">		for(int i &#x3D; 0;i &lt; nums.length;i++)&#123;</span><br><span class="line">		if(nums[i]!&#x3D;0)&#123;</span><br><span class="line">                	nums[index++]&#x3D;nums[i];</span><br><span class="line">            	&#125;</span><br><span class="line">        &#125;</span><br><span class="line">	for(;index &lt; nums.length;index++)&#123;</span><br><span class="line">            	nums[index]&#x3D;0;</span><br><span class="line">        	&#125;</span><br><span class="line">    	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ol start="27">
 <li>给定一个数组 nums 和一个值 val，你需要原地移除所有数值等于 val 的元素，返回移除后数组的新长度。<br>不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。<br>示例 1:<br>给定 nums = [3,2,2,3], val = 3,<br>函数应该返回新的长度 2, 并且 nums 中的前两个元素均为 2。<br>你不需要考虑数组中超出新长度后面的元素。</li>
 </ol>
@@ -200,10 +201,7 @@ var _hmt = _hmt || [];
 <ol start="26">
 <li>给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。<br>示例 1:<br>给定数组 nums = [1,1,2],<br>函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。<br>你不需要考虑数组中超出新长度后面的元素。</li>
 </ol>
-<p>class Solution {<br>        public int removeDuplicates(int[] nums) {<br>            if(nums.length == 0)return 0;<br>            int i = 0;<br>            for(int j = 1; j &lt; nums.length; j++){<br>                    if(nums[j]!=nums[i]){<br>                        i++;<br>                        nums[i]=nums[j];<br>                    }</p>
-<pre><code>    }
-    return i+1;
-}</code></pre><p>}</p>
+<p>class Solution {<br>        public int removeDuplicates(int[] nums) {<br>            if(nums.length == 0)return 0;<br>            int i = 0;<br>            for(int j = 1; j &lt; nums.length; j++){<br>                    if(nums[j]!=nums[i]){<br>                        i++;<br>                        nums[i]=nums[j];<br>                    }<br>            }<br>            return i+1;<br>        }<br>}</p>
 <ol start="80">
 <li>给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素最多出现两次，返回移除后数组的新长度。<br>不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。<br>示例 1:<br>给定 nums = [1,1,1,2,2,3],<br>函数应返回新长度 length = 5, 并且原数组的前五个元素被修改为 1, 1, 2, 2, 3 。<br>你不需要考虑数组中超出新长度后面的元素。</li>
 </ol>
