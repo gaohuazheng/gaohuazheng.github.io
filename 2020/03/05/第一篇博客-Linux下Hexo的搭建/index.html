@@ -16,7 +16,7 @@
 <meta property="og:description" content="Hexo简介 Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。 Hexo搭建步骤  安装Gitsu root进入root模式sudo apt-get install git 安装nodejs">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-05T06:47:16.000Z">
-<meta property="article:modified_time" content="2020-03-05T07:30:33.316Z">
+<meta property="article:modified_time" content="2020-03-07T08:15:04.060Z">
 <meta property="article:author" content="Gao Huazheng">
 <meta property="article:tag" content="Linux, Hexo">
 <meta name="twitter:card" content="summary">
@@ -202,7 +202,7 @@ var _hmt = _hmt || [];
 <li>设置个人域名</li>
 </ol>
 <p>主题设置<br>每个不同的主题会需要不同的配置，主题配置文件在主题目录下的_config.yml。我使用的是Yilia<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia<br>修改hexo根目录下的 _config.yml ： theme: yilia<br>cd themes/yilia<br>git pull<br>然后可以自己更改一些其他配置</p>
-<p>博文的发布和删除<br>hexo new post “article title”<br>在 source/_posts 文件夹下 vim “article title”<br>按i进入编辑，完成后按Esc，然后:wq保存编辑操作退出<br>hexo generate<br>hexo deploy<br>想要删除的话就在source/_posts 文件夹下 rm “article title”</p>
+<p>博文的发布和删除<br>创建空文档hexo new post “article title”<br>在 source/_posts 文件夹下 vim “article title”.md<br>按i进入编辑，完成后按Esc，然后:wq保存编辑操作退出<br>hexo generate<br>hexo deploy<br>想要删除的话就在source/_posts 文件夹下 rm “article title”</p>
 
       
 
