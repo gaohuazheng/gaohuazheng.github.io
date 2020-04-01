@@ -170,6 +170,85 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-设计模式几大原则" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%87%A0%E5%A4%A7%E5%8E%9F%E5%88%99/">设计模式几大原则</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%87%A0%E5%A4%A7%E5%8E%9F%E5%88%99/" class="archive-article-date">
+  	<time datetime="2020-04-01T05:29:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>设计模式常用的七大原则有:</p>
+<p>1) 单一职责原则<br>2) 接口隔离原则<br>3) 依赖倒转原则<br>4) 里氏替换原则<br>5) 开闭原则 ocp<br>6) 迪米特法则<br>7) 合成复用原则</p>
+<p>单一职责原则<br>对类来说的，即一个类应该只负责一项职责。如类A负责两个不同职责：职责1，职责2。<br>当职责1需求变更而改变A时，可能造成职责2执行错误， 所以需要将类A的粒度分解为<br>A1， A2<br>接口隔离原则(Interface Segregation Principle)<br>客户端不应该依赖它不需要的接口，即一个类对另一个类的依赖应该建立在最小的接口上<br>依赖倒转原则<br>1）高层模块不应该依赖低层模块，二者都应该依赖其抽象<br>2) 抽象不应该依赖细节，细节应该依赖抽象<br>3) 依赖倒转(倒置)的中心思想是面向接口编程<br>4) 依赖倒转原则是基于这样的设计理念：相对于细节的多变性，抽象的东西要稳定的多。以抽象为基础搭建的架构比以细节为基础的架构要稳定的多。在java中，抽象指的是接口或抽象类，细节就是具体的实现类<br>5) 使用接口或抽象类的目的是制定好规范，而不涉及任何具体的操作，把展现细节的任务交给他们的实现类去完成<br>里氏替换原则</p>
+<p>1) 如果对每个类型为T1的对象o1，都有类型为T2的对象o2，使得以T1定义的所有程序<br>P在所有的对象o1都代换成o2时，程序P的行为没有发生变化，那么类型T2是类型T1<br>的子类型。换句话说，所有引用基类的地方必须能透明地使用其子类的对象。<br>2) 在使用继承时，遵循里氏替换原则，在子类中尽量不要重写父类的方法<br>3) 里氏替换原则告诉我们，继承实际上让两个类耦合性增强了，在适当的情况下，可以通过聚合，组合，依赖 来解决问题。<br>开闭原则</p>
+<p>1) 开闭原则（Open Closed Principle） 是编程中最基础、最重要的设计原则<br>2) 一个软件实体如类，模块和函数应该对扩展开放(对提供方)， 对修改关闭(对使用方)。 用抽象构建框架，用实现扩展细节。<br>3) 当软件需要变化时，尽量通过扩展软件实体的行为来实现变化，而不是通过修改已有的代码来实现变化。<br>4) 编程中遵循其它原则，以及使用设计模式的目的就是遵循开闭原则。<br>迪米特法则</p>
+<p>1) 一个对象应该对其他对象保持最少的了解<br>2) 类与类关系越密切，耦合度越大<br>3) 迪米特法则(Demeter Principle)又叫最少知道原则，即一个类对自己依赖的类知道的越少越好。也就是说，对于被依赖的类不管多么复杂，都尽量将逻辑封装在类的内部。对外除了提供的public 方法，不对外泄露任何信息<br>4) 迪米特法则还有个更简单的定义：只与直接的朋友通信<br>5) 直接的朋友：每个对象都会与其他对象有耦合关系，只要两个对象之间有耦合关系，<br>我们就说这两个对象之间是朋友关系。耦合的方式很多，依赖，关联，组合，聚合<br>等。其中，我们称出现成员变量，方法参数，方法返回值中的类为直接的朋友，而<br>出现在局部变量中的类不是直接的朋友。也就是说，陌生的类最好不要以局部变量<br>的形式出现在类的内部<br>6）迪米特法则的核心是降低类之间的耦合，要求降低类间(对象间)耦合关系<br>合成复用原则（Composite Reuse Principle）<br>原则是尽量使用合成/聚合的方式，而不是使用继承</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%87%A0%E5%A4%A7%E5%8E%9F%E5%88%99/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-“LeetCode数组题整理”" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -434,6 +513,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Linux, Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
             
             <div class="clearfix"></div>
